@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+}
+
+.caixa{
+    color: bisque;
+}
+
+#titulo{
+    color: aliceblue;
+}
+
+#primeira-div{
+    color:rgb(196, 139, 250)
+}
+.link{
+    color: red;
+}
+
+p{
+    color: aqua;
+}
