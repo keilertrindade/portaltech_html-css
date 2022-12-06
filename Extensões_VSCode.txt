@@ -1,0 +1,22 @@
+-> Live Server: Extensão que cria um servidor local com visualizão automatica e ao vivo do projeto sempre que salvarmos os arquivos ele atualiza automaticamente as alterações no navegador. 
+
+-> ESLint: faz uma varredura do seu código apontando os erros cometidos na escrita do código de acordo com o padrão definido na configuração.
+
+-> Code Runner: Permite executar, com um único clique, um código selecionado ou um código em um arquivo salvo. 
+
+
+-> Visual Studio IntelliCode: serve para expandir o Intellisense do VS Code com inteligência artificial, permitindo construir códigos com mais fluidez e velocidade
+
+GitLens: Implementa várias funcionalidades do Git que não são nativas no VS Code, tais como comparar o commit atual com os anteriores e mostrar quem foi o autor de uma determinada linha de código.
+
+-> CSS Peek: Permite que você estenda seu arquivo HTML e js para mostrar o código CSS / SCSS / LESS no código-fonte. Também transforma as classes em uma âncora que permite que você vá direto ao CSS da classe sem precisar procurar no meio do seu arquivo CSS.
+
+-> Colorize: visualiza instantaneamente a cor que está no código RGB, RGBA E Hexadecimal.
+
+-> Bookmarks: Permite adcionar marcadores ao código, o que ajuda a uma navegação mais rápida nele.
+
+-> REST Client: Extensão que permite executar requisições direto do VSCode para facilitar a testagem de APIs
+
+-> Indent-rainbow: Adiciona cores à identação
+
+-> Rainbow Brackets: Adiciona cores ao seu editor, nos parênteses, chaves e colchetes.

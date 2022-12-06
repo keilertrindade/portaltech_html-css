@@ -1,0 +1,56 @@
+justify-content   
+
+    flex-start: Items align to the left side of the container.
+    flex-end: Items align to the right side of the container.
+    center: Items align at the center of the container.
+    space-between: Items display with equal spacing between them.
+    space-around: Items display with equal spacing around them.
+	space-evenly:
+	
+align-items: 
+	flex-start
+	flex-end
+	center
+	baseline
+	stretch
+	
+flex-direction
+	row
+	row-reverse
+	column
+	column-reverse
+	
+order
+	[...],-2,-1,0,1,2,[...]
+	
+align-self
+	flex-start
+	flex-end
+	center
+	baseline
+	stretch
+	
+align-content:
+	flex-start
+	flex-end
+	center
+	baseline
+	space-between
+	space-around
+	stretch
+
+
+	
+flex-wrap
+	nowrap
+	wrap
+	wrap-reverse
+	
+flex-flow
+	atalho para [flex-direction + flex-wrap]
+	[propriedade flex] [propriedade wrap]
+
+
+
+
+
