@@ -1,0 +1,29 @@
+Object { veg: false, ovo: false, soja: false, leite: false, glutem: true, amend: false, crust: false, minTmp: 0, maxTmp: 0 }
+​amend: false
+​crust: false
+​glutem: true
+​leite: false
+​ovo: false
+​soja: false
+veg: false
+
+​maxTmp: 0
+​minTmp: 0
+--------------
+amendoim: false
+​​crustaceo: false
+glutem: true
+leite: false
+ovo: false
+soja: false
+vegano: true
+
+------------
+
+ if(/*filter.amendoim != listaReceita[i].amendoim && filter.crustaceo != listaReceita[i].crustaceo && filter.glutem != listaReceita[i].glutem && filter.leite != listaReceita[i].leite && filter.ovo != listaReceita[i].ovo && filter.soja != listaReceita[i].soja &&*/ filter.vegano == listaReceita[i].vegano){
+                //creatCardReceitas(i);
+                arraytrue.push(listaReceita[i]);
+                (validate)?creatCardReceitas(i):'';
+            }else{
+                arrayfalse.push(listaReceita[i]);
+            }
