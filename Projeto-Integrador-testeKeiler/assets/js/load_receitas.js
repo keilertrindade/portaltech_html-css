@@ -252,7 +252,7 @@ const listaReceita = [
     }
 ];
 
-function creatCardReceitas(i) {
+function creatCardReceitas(listaReceita, i) {
     let alergIcons = "";
     
     if (listaReceita[i].amendoim) {
@@ -326,6 +326,7 @@ function filterRecipes(listaReceita, filters) {
 }); 
 console.log(filteredRecipes);*/
 
+
 function listReceitas(pg) {
     let filter = {
         vegano: document.getElementById('ckb_veg').checked,
@@ -339,9 +340,9 @@ function listReceitas(pg) {
         //maxTmp: Number(document.getElementById('tmp_max').value)
     };
 
-   /*console.log("filter");
+    console.log("filter");
     console.log(filter);
-    console.log("Resultado busca");
+    /*console.log("Resultado busca");
 
     const filteredRecipes = filterRecipes(listaReceita, filter);
     console.log(filteredRecipes);*/
@@ -353,27 +354,60 @@ function listReceitas(pg) {
     
     if (Object.values(filter).filter((value) => value == true || value != 0).length == 0) {
         for(i; i<=limit; i++) {
-            creatCardReceitas(i);
+            creatCardReceitas(listaReceita, i);
         }
     } else {
 
-    console.log("filter");
-    console.log(filter);
-    console.log("Resultado busca");
+    let arrayfiltro = []
+    let arraylistafiltrada = []
+    //console.log("filter");
+    //console.log(filter);
+    //console.log("Resultado busca");
+
+    for(x = 1; x <= 6; x++){
+        let [key, val] = Object.entries(filter)[x]
+        if(val == true){
+            val = false
+            arrayfiltro.push(key, val)
+            //console.log(key,val)
+        }
+    }
+    console.log("arrayfiltro")
+    console.log(arrayfiltro)
+    for(x = 0; x < listaReceita.length; x++){
+        let validador = false
+        
+        for(y = 0; y < arrayfiltro.length/2; y++){
+            let [key, val] = Object.entries(arrayfiltro)[y]
+            let jsonparse = JSON.parse(JSON.stringify(arrayfiltro))
+           
+            let ver = parseInt(key)
+            //console.log(listaReceita[x].val, val)
+            if (listaReceita[x][val] == jsonparse[1]){
+                validador = true
+            }else{
+                validador = false
+            }
+        }
+
+        if(validador == true){
+            arraylistafiltrada.push(listaReceita[x])
+        }
+
+    }
+
+    console.log("arraylistafiltrada")
+    console.log(arraylistafiltrada)
+
+
+
     
-    filter.ovo = !filter.ovo
-    filter.soja = !filter.soja
-    filter.leite = !filter.leite
-    filter.glutem = !filter.glutem
-    filter.amendoim = !filter.amendoim
-    filter.crustaceo = !filter.crustaceo
-
-
-
-
-    const filteredRecipes = filterRecipes(listaReceita, filter);
+    /*const filteredRecipes = filterRecipes(listaReceita, filter);
     console.log(filteredRecipes);
-        /*for (i; i < limit; i++) {
+    
+    
+
+        for (i; i < limit; i++) {
             let validate = false
             let tmp = false;
             let array = []

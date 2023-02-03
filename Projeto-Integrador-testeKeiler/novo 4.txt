@@ -27,3 +27,19 @@ vegano: true
             }else{
                 arrayfalse.push(listaReceita[i]);
             }
+
+----------------------
+    /*filter.ovo = !filter.ovo
+    filter.soja = !filter.soja
+    filter.leite = !filter.leite
+    filter.glutem = !filter.glutem
+    filter.amendoim = !filter.amendoim
+    filter.crustaceo = !filter.crustaceo
+
+    (filter.ovo)?filter.ovo=false:filter.ovo=true;
+    (filter.soja)?filter.soja=false:filter.soja=true;
+    (filter.leite)?filter.leite=false:filter.leite=true;
+    (filter.glutem)?filter.glutem=false:filter.glutem=true;
+    (filter.amendoim)?filter.amendoim=false:filter.amendoim=true;
+    (filter.crustaceo)?filter.crustaceo=false:filter.crustaceo=true;*/
+-----------------------------
