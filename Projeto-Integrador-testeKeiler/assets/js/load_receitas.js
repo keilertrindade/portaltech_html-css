@@ -89,7 +89,7 @@ const listaReceita = [
         soja: false,
         amendoim: false,
         ovo: false,
-        leite: false,
+        leite: true,
         crustaceo: false,
         doce: false,
         salgado: true,
