@@ -35,3 +35,17 @@ VALUES
 SELECT clientes.nome, pedidos.data_pedido, pedidos.valor
 FROM clientes
 INNER JOIN pedidos ON clientes.id = pedidos.cliente_id;
+
+----------x--------x-----------------
+
+DELIMITER $$
+CREATE TRIGGER log_clientes_update
+AFTER UPDATE ON clientes
+FOR EACH ROW
+BEGIN
+  INSERT INTO log_clientes (cliente_id, nome_antigo, nome_novo, endereco_antigo, endereco_novo)
+  VALUES (OLD.id, OLD.nome, NEW.nome, OLD.endereco, NEW.endereco);
+END$$
+DELIMITER ;
+
+/* Trigger que após update na tabela cliente insere os dados antigos na tabela log_clientes, permitindo assim a persistencia dos dados.*/
