@@ -1,0 +1,9 @@
+Pilares de segurança
+
+Confidencialidade: Pilar responsável por assegurar que apenas as pessoas autorizadas tenham acesso aos dados, restringir acesso para quem não precisa.
+
+Disponibilidade: Pilar responsável por assegurar que os dados estejam disponíveis para utilização sempre que necessário.
+
+Integridade: Assegura que os dados armazenados são retidos em sua forma original, protege contra alterações não autorizadas e garante que eles sejam precisos e confiáveis.
+
+Para garantir que todos esses pilares funcionem da maneira correta podemos utilizar práticas como criptografia, autenticação de dados mais robusta, realização de backups de forma regular e implementação de medidas melhjores de segurança para evitar ataques através da rede. 
