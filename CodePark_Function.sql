@@ -9,3 +9,17 @@ BEGIN
     RETURN qtd;
 END$$
 DELIMITER ;
+---
+Descriptografar
+
+OPEN SYMMETRIC KEY ChaveSenha
+DECRYPTION BY CERTIFICATE Certificado
+GO
+SELECT * senhadescriptografada = CAST (DECRYPTBYKEY(SENHA) AS varchar(50))
+FROM Usuario
+CLOSE SYMMETRIC KEY ChaveSenha
+
+-------
+CREATE CERTIFICATE MeuCertificado
+ENCRYPTION BY PASSWORD = 'SENHA@123'
+WITH SUBJECT = 'Meu Certificado'
